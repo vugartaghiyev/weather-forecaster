@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: rgb(186, 255, 198);
+}
+
+.App {
+  max-width: 1090px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 80px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  background: rgb(255, 246, 246);
+  -o-border-radius: 15px;
+  box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App__Name {
+  margin-bottom: 30px;
+  font-size: 55px;
+}
+
+.Days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Day {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 10px;
+  cursor: pointer;
+}
+
+.Day__Current {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.05);
+  background: rgb(255, 255, 224);
+}
+
+.Day__Picture {
+  width: 60%;
+}
+
+.City__Name {
+  font-weight: 500;
+  font-size: 95px;
+  padding-bottom: 15px;
+  color: rgb(207, 207, 207);
+}
+
+.Day__Name {
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.Day__Temps {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.Day__Temps span:nth-last-child(1) {
+  color: rgb(156, 156, 156);
+}
+
+.Search-Bar {
+  width: 100%;
+  display: flex;
+}
+.Search-Bar input {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 16px;
+  border: 2px solid black;
+  padding-left: 10px;
+  outline: none;
+  background: rgb(255, 255, 224);
+}
+
+.Search-Bar button {
+  cursor: pointer;
+  padding: 15px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  outline: none;
+  background: black;
+}
